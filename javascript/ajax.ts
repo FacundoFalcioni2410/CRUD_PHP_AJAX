@@ -42,6 +42,7 @@ class Ajax
     public Post = (ruta: string, success: Function, params: string | FormData = "", error?: Function):void => 
     {
         this.xhr.open('POST', ruta, true);
+        
         if(typeof(params) == "string")
         {
             this.xhr.setRequestHeader("content-type","application/x-www-form-urlencoded");

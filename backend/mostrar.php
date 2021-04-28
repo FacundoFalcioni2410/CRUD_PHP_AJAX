@@ -9,10 +9,6 @@
         {
             $path = "../archivos/empleados.txt";
         }
-        else
-        {
-            $path = "./archivos/empleados.txt";
-        }
 
         $archivo = fopen($path,"r");
         $fabrica = new Fabrica(".", 7);
